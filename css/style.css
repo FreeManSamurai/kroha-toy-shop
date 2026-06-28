@@ -1,0 +1,547 @@
+/* =====================================
+   КРОХА - магазин детских игрушек
+   Основные стили сайта
+===================================== */
+
+
+/* ===== Подключение переменных ===== */
+
+:root {
+
+    --pink: #ff8fb1;
+    --dark-pink: #e85d8c;
+    --black: #1c1c1c;
+    --white: #ffffff;
+    --beige: #f8efe7;
+    --light-pink: #ffe5ed;
+    --gray: #777;
+
+}
+
+
+/* ===== Общие настройки ===== */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    background-color: var(--beige);
+
+    color: var(--black);
+
+    font-family: 'Montserrat', sans-serif;
+
+    line-height: 1.6;
+
+}
+
+
+/* ===== Заголовки ===== */
+
+
+h1,
+h2,
+h3,
+h4 {
+
+    font-family: 'Fredoka', sans-serif;
+
+    font-weight: 600;
+
+}
+
+
+.quote {
+
+    font-family: 'Caveat', cursive;
+
+    font-size: 32px;
+
+}
+
+
+/* ===== Ссылки ===== */
+
+
+a {
+
+    text-decoration: none;
+
+    color: inherit;
+
+}
+
+
+
+/* =====================================
+            NAVBAR
+===================================== */
+
+
+.navbar {
+
+    background: var(--black);
+
+    padding: 15px 0;
+
+}
+
+
+.navbar-brand {
+
+
+    color: var(--pink) !important;
+
+    font-family: 'Fredoka';
+
+    font-size: 32px;
+
+    font-weight: 600;
+
+}
+
+
+.nav-link {
+
+
+    color: white !important;
+
+    margin-left: 15px;
+
+    transition: 0.3s;
+
+
+}
+
+
+
+.nav-link:hover {
+
+
+    color: var(--pink) !important;
+
+}
+
+
+
+/* =====================================
+            HERO
+===================================== */
+
+
+.hero {
+
+
+    min-height: 90vh;
+
+    display: flex;
+
+    align-items: center;
+
+    background:
+
+    linear-gradient(
+        rgba(0,0,0,.55),
+        rgba(0,0,0,.55)
+    ),
+
+    url("../images/banner.jpg");
+
+
+    background-size: cover;
+
+    background-position: center;
+
+
+    color:white;
+
+
+}
+
+
+
+.hero h1 {
+
+
+    font-size: 70px;
+
+}
+
+
+.hero span {
+
+
+    color: var(--pink);
+
+}
+
+
+
+.hero p {
+
+
+    font-size: 22px;
+
+}
+
+
+
+/* ===== Кнопки ===== */
+
+
+.btn-kroha {
+
+
+    background: var(--pink);
+
+    color:white;
+
+    border:none;
+
+    padding:15px 35px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:0.3s;
+
+}
+
+
+
+.btn-kroha:hover {
+
+
+    background:var(--dark-pink);
+
+    transform:translateY(-5px);
+
+
+}
+
+
+
+/* =====================================
+        Карточки товаров
+===================================== */
+
+
+.product-card {
+
+
+    background:white;
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    transition:0.3s;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+
+
+}
+
+
+
+.product-card:hover {
+
+
+    transform:translateY(-10px);
+
+
+}
+
+
+
+.product-card img {
+
+
+    width:100%;
+
+    height:250px;
+
+    object-fit:cover;
+
+
+}
+
+
+
+.product-body {
+
+
+    padding:20px;
+
+
+}
+
+
+
+.price {
+
+
+    color:var(--dark-pink);
+
+    font-size:24px;
+
+    font-weight:700;
+
+}
+
+
+
+/* =====================================
+        Секции
+===================================== */
+
+
+.section {
+
+
+    padding:80px 0;
+
+
+}
+
+
+
+.section-title {
+
+
+    text-align:center;
+
+    margin-bottom:50px;
+
+    font-size:45px;
+
+
+}
+
+
+
+.section-title span {
+
+
+    color:var(--pink);
+
+}
+
+
+
+/* =====================================
+        Новости
+===================================== */
+
+
+.news-card {
+
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:25px;
+
+    transition:.3s;
+
+
+}
+
+
+.news-card:hover {
+
+
+    transform:scale(1.03);
+
+
+}
+
+
+
+
+/* =====================================
+        Таблицы
+===================================== */
+
+
+table {
+
+
+    background:white;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+
+}
+
+
+th {
+
+
+    background:var(--black);
+
+    color:white;
+
+
+}
+
+
+td,
+th {
+
+
+    padding:15px;
+
+    border:1px solid #ddd;
+
+
+}
+
+
+
+
+/* =====================================
+        Footer
+===================================== */
+
+
+footer {
+
+
+    background:var(--black);
+
+    color:white;
+
+    padding:40px 0;
+
+    text-align:center;
+
+
+}
+
+
+footer span {
+
+
+    color:var(--pink);
+
+
+}
+
+
+
+/* =====================================
+        Анимации
+===================================== */
+
+
+.fade {
+
+
+    animation:fade 1s ease;
+
+
+}
+
+
+@keyframes fade {
+
+
+    from {
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+
+    to {
+
+        opacity:1;
+
+        transform:none;
+
+    }
+
+
+}
+
+
+
+/* =====================================
+        Адаптация телефона
+===================================== */
+
+
+@media(max-width:768px){
+
+
+.hero h1{
+
+font-size:45px;
+
+}
+
+
+.section-title{
+
+font-size:35px;
+
+}
+
+
+}
+
+.sound-btn {
+
+
+position: fixed;
+
+bottom: 25px;
+
+right: 25px;
+
+
+width: 60px;
+
+height: 60px;
+
+
+border-radius: 50%;
+
+
+border: none;
+
+
+background: #ff8fb1;
+
+
+font-size: 25px;
+
+
+cursor: pointer;
+
+
+z-index: 999;
+
+
+box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+
+
+}
