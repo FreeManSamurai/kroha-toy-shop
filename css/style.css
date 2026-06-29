@@ -545,3 +545,338 @@ box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 
 
 }
+
+/* ===== Улучшения сайта Кроха ===== */
+
+
+/* плавность всего сайта */
+
+*{
+    transition:0.3s;
+}
+
+
+
+/* красивые карточки */
+
+.card-kroha{
+
+background:white;
+
+border-radius:25px;
+
+padding:25px;
+
+height:100%;
+
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+
+animation:showCard 0.8s ease;
+
+}
+
+
+
+.card-kroha:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 20px 40px rgba(255,120,160,0.25);
+
+}
+
+
+
+
+/* появление */
+
+@keyframes showCard{
+
+from{
+
+opacity:0;
+
+transform:translateY(30px);
+
+}
+
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+
+
+
+/* красивые кнопки */
+
+.btn-kroha{
+
+
+background:#ff8fb1;
+
+color:white;
+
+padding:12px 30px;
+
+border-radius:30px;
+
+font-weight:bold;
+
+border:none;
+
+
+}
+
+
+.btn-kroha:hover{
+
+
+background:#000;
+
+color:white;
+
+transform:scale(1.05);
+
+
+}
+
+
+
+
+
+
+/* логотип */
+
+.logo-kroha{
+
+
+font-family:'Caveat';
+
+font-size:40px;
+
+color:#ff8fb1;
+
+
+}
+
+
+
+
+
+/* изображения игрушек */
+
+
+.toy-img{
+
+
+width:100%;
+
+height:250px;
+
+object-fit:cover;
+
+border-radius:20px;
+
+
+}
+
+
+
+.toy-img:hover{
+
+transform:scale(1.05);
+
+}
+
+
+
+
+
+
+/* блок отзывов */
+
+
+.review{
+
+
+background:#fff;
+
+border-radius:25px;
+
+padding:25px;
+
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+
+
+}
+
+
+
+
+
+/* всплывающая акция */
+
+
+.sale-popup{
+
+
+position:fixed;
+
+bottom:30px;
+
+left:30px;
+
+
+background:#ff8fb1;
+
+color:white;
+
+padding:20px;
+
+border-radius:20px;
+
+z-index:999;
+
+
+animation:popup 1s;
+
+
+}
+
+
+
+@keyframes popup{
+
+
+from{
+
+opacity:0;
+
+transform:translateY(100px);
+
+}
+
+
+to{
+
+opacity:1;
+
+}
+
+
+}
+
+
+
+
+
+/* мобильная версия */
+
+@media(max-width:768px){
+
+
+.navbar-nav{
+
+display:block;
+
+}
+
+
+.card-kroha{
+
+margin-bottom:20px;
+
+}
+
+
+}
+
+
+.animate-title{
+
+animation:showCard 1s;
+
+}
+
+/* ===== Главный титульный блок КРОХА ===== */
+
+
+.hero-image h1 {
+
+    line-height: 1.3;
+    
+    margin-bottom: 35px;
+
+    letter-spacing: 2px;
+
+}
+
+
+
+.hero-image h1 span {
+
+
+    display: block;
+
+    font-size: 180px;
+
+    line-height: 1;
+
+    margin: 35px 0;
+
+
+    font-family: 'Caveat', cursive;
+
+    color: #ff8fb1;
+
+
+    letter-spacing: 8px;
+
+
+    text-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+
+
+}
+
+
+
+.hero-image h2 {
+
+
+    margin-top: 45px;
+
+    margin-bottom: 40px;
+
+
+    font-size: 32px;
+
+
+    font-weight: 400;
+
+
+    letter-spacing: 3px;
+
+
+}
+
+
+
+
+.hero-image p {
+
+
+    margin-top: 30px;
+
+    font-size: 22px;
+
+    line-height: 1.8;
+
+
+}
