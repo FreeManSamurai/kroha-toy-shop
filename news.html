@@ -1,12 +1,28 @@
 <!DOCTYPE html>
 <html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Новости | Кроха</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<!DOCTYPE html>
+<html lang="ru">
 
 <head>
 
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Новости | Кроха</title>
+
+<title>Кроха — магазин детских игрушек</title>
 
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -25,25 +41,27 @@
 
 
 
-<!-- Меню -->
+<!-- Навигация -->
 
 <nav class="navbar">
+
 
 <div class="container">
 
 
-<a class="navbar-brand" href="index.html">
+<a href="index.html" class="logo-kroha">
 
-🧸 КРОХА
+🧸 Кроха
 
 </a>
+
 
 
 <div>
 
 
-<a class="nav-link d-inline" href="index.html">
-Главная
+<a class="nav-link d-inline" href="about.html">
+О компании
 </a>
 
 
@@ -52,8 +70,28 @@
 </a>
 
 
+<a class="nav-link d-inline" href="portfolio.html">
+Портфолио
+</a>
+
+
+<a class="nav-link d-inline" href="news.html">
+Новости
+</a>
+
+
+<a class="nav-link d-inline" href="offers.html">
+Акции
+</a>
+
+
 <a class="nav-link d-inline" href="contacts.html">
 Контакты
+</a>
+
+
+<a class="nav-link d-inline" href="author.html">
+Автор
 </a>
 
 
@@ -62,6 +100,7 @@
 
 </div>
 
+
 </nav>
 
 
@@ -69,349 +108,122 @@
 
 
 
+<section class="news-hero">
 
-<!-- Заголовок -->
+    <h1>Новости Крохи</h1>
 
-
-<section class="section">
-
-
-<div class="container">
-
-
-<h1 class="section-title">
-
-Новости <span>Кроха</span>
-
-</h1>
-
-
-<p class="text-center">
-
-Следите за событиями нашего магазина,
-новыми поступлениями и специальными предложениями.
-
-</p>
-
-
-
-</div>
-
+    <p>
+        Новинки, акции и интересные события нашего магазина игрушек
+    </p>
 
 </section>
 
 
 
+<section class="news-container">
 
 
+    <article class="news-card">
 
+        <img src="images/news-1.jpg" alt="Новое поступление игрушек">
 
+        <div class="news-content">
 
-<!-- Новости -->
+            <span class="news-date">
+                29 июня 2026
+            </span>
 
+            <h2>
+                Новое поступление игрушек
+            </h2>
 
-<section class="section" style="background:white;">
+            <p>
+                В магазине «Кроха» появились новые развивающие игрушки,
+                мягкие друзья и интересные наборы для творчества.
+            </p>
 
+            <a href="#" class="news-button">
+                Читать далее
+            </a>
 
-<div class="container">
+        </div>
 
+    </article>
 
-<div class="row">
 
 
 
+    <article class="news-card">
 
+        <img src="images/news-2.jpg" alt="Акция в магазине">
 
-<!-- Новость 1 -->
+        <div class="news-content">
 
+            <span class="news-date">
+                Акция недели
+            </span>
 
-<div class="col-md-4 mb-4">
+            <h2>
+                Подарки для маленьких покупателей
+            </h2>
 
+            <p>
+                Только сейчас специальные предложения на популярные
+                игрушки и наборы. Успейте выбрать подарок!
+            </p>
 
-<div class="news-card">
+            <a href="#" class="news-button">
+                Читать далее
+            </a>
 
+        </div>
 
-<img 
-src="https://images.unsplash.com/photo-1596461404969-9ae70f2830c1"
-class="img-fluid rounded-4 mb-3"
-alt="Игрушки">
+    </article>
 
 
-<h3>
-Новая коллекция развивающих игрушек
-</h3>
 
 
-<p>
+    <article class="news-card">
 
-15 января 2026 года
+        <img src="images/news-3.jpg" alt="Игрушка месяца">
 
-</p>
+        <div class="news-content">
 
+            <span class="news-date">
+                Игрушка месяца
+            </span>
 
-<p>
+            <h2>
+                Выбор родителей
+            </h2>
 
-В магазин «Кроха» поступила новая коллекция
-развивающих игрушек для детей от 1 до 5 лет.
+            <p>
+                Рассказываем о самых интересных игрушках,
+                которые помогают детям развиваться и играть.
+            </p>
 
-В ассортименте появились конструкторы,
-сортеры и обучающие наборы.
+            <a href="#" class="news-button">
+                Читать далее
+            </a>
 
-</p>
+        </div>
 
+    </article>
 
-</div>
-
-
-</div>
-
-
-
-
-
-
-
-
-<!-- Новость 2 -->
-
-
-<div class="col-md-4 mb-4">
-
-
-<div class="news-card">
-
-
-<img 
-src="https://images.unsplash.com/photo-1566576912320-1f7f5f3f7b5c"
-class="img-fluid rounded-4 mb-3"
-alt="Магазин">
-
-
-<h3>
-Игровая зона для детей
-</h3>
-
-
-<p>
-
-20 февраля 2026 года
-
-</p>
-
-
-<p>
-
-В магазине была открыта новая игровая зона,
-где маленькие посетители могут познакомиться
-с игрушками перед покупкой.
-
-</p>
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-
-
-
-<!-- Новость 3 -->
-
-
-<div class="col-md-4 mb-4">
-
-
-<div class="news-card">
-
-
-<img 
-src="https://images.unsplash.com/photo-1559454403-b8fb88521f11"
-class="img-fluid rounded-4 mb-3"
-alt="Акция">
-
-
-<h3>
-«Кроха» помогает детям
-</h3>
-
-
-<p>
-
-1 июня 2026 года
-
-</p>
-
-
-<p>
-
-В честь Дня защиты детей магазин провел
-благотворительную акцию и передал игрушки
-детскому образовательному центру.
-
-</p>
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-
-
-</div>
-
-
-</div>
 
 
 </section>
-
-
-
-
-
-
-
-
-<!-- Таблица новостей -->
-
-
-<section class="section">
-
-
-<div class="container">
-
-
-<h2 class="text-center mb-5">
-
-Последние события
-
-</h2>
-
-
-
-
-<table class="table table-bordered text-center">
-
-
-<tr>
-
-<th>
-Дата
-</th>
-
-<th>
-Событие
-</th>
-
-<th>
-Статус
-</th>
-
-</tr>
-
-
-
-<tr>
-
-<td>
-15.01.2026
-</td>
-
-<td>
-Новое поступление игрушек
-</td>
-
-<td>
-Завершено
-</td>
-
-</tr>
-
-
-
-<tr>
-
-<td>
-20.02.2026
-</td>
-
-<td>
-Открытие игровой зоны
-</td>
-
-<td>
-Активно
-</td>
-
-</tr>
-
-
-
-<tr>
-
-<td>
-01.06.2026
-</td>
-
-<td>
-Благотворительная акция
-</td>
-
-<td>
-Завершено
-</td>
-
-</tr>
-
-
-</table>
-
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
 
 
 
 <footer>
 
-
-<p>
-
-© 2026 Магазин игрушек
-
-<span>
-КРОХА
-</span>
-
-</p>
-
+    <p>
+        © 2026 Кроха — магазин детских игрушек
+    </p>
 
 </footer>
 
 
-
-
-
-
 </body>
-
 </html>
